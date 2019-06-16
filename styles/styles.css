@@ -1,12 +1,19 @@
-.div-1 {
-  width: 200px;
-  height: 200px;
-  border: 2px solid red;
+/* .div-1{
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
 }
-
-.div-2 {
-  width: 200px;
-  height: 200px;
-  border: 2px solid black;
+.div-2{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+} */
+.block {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 /*# sourceMappingURL=styles.css.map */
