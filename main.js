@@ -398,15 +398,62 @@ let elem1=document.querySelector('.div-2');
         div2.removeChild(h1_2);
         div2.remove(); */
 
-        let div1=document.querySelector('.div-1');
+        /* let div1=document.querySelector('.div-1');
         let inp=document.querySelector('.inp');
         let div2=document.createElement('div');
         div2.innerHTML='Hello World';
         inp.addEventListener('click', function(){
             
-        })
+        }) */
+        
+        /* for (var i=0; i<2; i++){
+            var a=0;
+            console.log(a);
+        }
+        if(true){
+            console.log(i);
+        }
+    document.addEventListener('loaded', function(){
+
+    }) */
+      /*   for (i=0; i<=10; i++){
+            for (j=0; j<=10; j++){
+                console.log(i, j);
+            }
+        }
         
 
-
+let i=0; */
+/* function(){
+    let b=5;
+    if(true){
+        let c=6;
+    }
+    console.log(b);
+}; */
+/* let kachok={
+    name: 'Serega',
+    surname:'Machina',
+    fullname:function(){
+        console.log(this.name, this.surname);
+    }
+};
+let a=kachok;
+kachok.name=123;
+kachok=null;
+a.fullname();
+console.log(a.name); */
+//kachok.fullname();
+//console.log(kachok.name, kachok.surname);
+let input1=document.querySelector('.input1');
+let input2=document.querySelector('.input2');
+let sum =document.querySelector('.sum');
+let minus=document.querySelector('.minus');
+let mult=document.querySelector('.mult');
+let divis=document.querySelector('.divis');
+let result=document.querySelector('.result');
+let calc={
+    
+}
         
     
