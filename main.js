@@ -398,6 +398,7 @@ let elem1=document.querySelector('.div-2');
         div2.removeChild(h1_2);
         div2.remove(); */
 
+<<<<<<< HEAD
         /* let div1=document.querySelector('.div-1');
         let inp=document.querySelector('.inp');
         let div2=document.createElement('div');
@@ -405,6 +406,24 @@ let elem1=document.querySelector('.div-2');
         inp.addEventListener('click', function(){
             
         }) */
+=======
+        let div1=document.querySelector('.div-1');
+        let inp=document.querySelector('.but');
+        inp.addEventListener('click', function(){
+            let div2=document.createElement('div');
+            div1.appendChild(div2);
+            div2.innerHTML='hello';
+            div2.className='nub';
+            let input2=document.createElement('input');
+            div1.appendChild(input2);
+            input2.type='button';
+            input2.value='-';
+            input2.addEventListener('click', function(){
+                div2.remove();
+                input2.remove();
+            })
+        })
+>>>>>>> 8b5385609fe079d2acfba9b66a22bb3e3bae831f
         
         /* for (var i=0; i<2; i++){
             var a=0;
