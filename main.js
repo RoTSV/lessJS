@@ -251,32 +251,34 @@ let str = [];
 
 
 
-    let kachok = {
-        name: 'Серёга',
-        weight: '103kg',
-        ant: {
-            bicops: 46,
-            chest:130
-        }
-       };
-       kachok.last_year = {
-        bicops: 42,
-        chest: 124,
-        legs: 42
-       };*/
-    
-    /*console.log(kachok);*/
-/*for(let i in kachok){
+/*let kachok = {
+    name: 'Серёга',
+    weight: '103kg',
+    ant: {
+        bicops: 46,
+        chest:130
+    }
+    };
+    kachok.last_year = {
+    bicops: 42,
+    chest: 124,
+    legs: 42
+    };
+console.log(kachok);
+
+for(let i in kachok){
 console.log(kachok[i]);
 console.log(i);
 console.log(`Keys is ${i}: ${kachok[i]}`);
+
 if(typeof kachok[i] === 'object'){
     console.log(kachok[i]);
 if(typeof kachok[i] ==='string'){
         console.log(kachok[i]);
     } else if(typeof kachok[i] === 'number'){
         console.log(kachok[i]);
-    }
+    };
+
 for(let j in kachok[i]){
     if(typeof kachok[i][j] === 'string'){
         console.log(kachok[i][j]);
@@ -288,6 +290,8 @@ for(let j in kachok[i]){
 }
 } 
 }*/
+
+
 
 /*document.querySelector('div').innerHTML='Это див первый див';*/
 /*let a=document.querySelector('div').innerHTML;
@@ -302,12 +306,17 @@ element.addEventListener('mouseout', function(){
     element.style.backgroundColor='#000000';
 }
 )*/
+
+
 /*let input = document.querySelector('input');
 let div = document.querySelector('div');
 input.addEventListener('change', function(){
     console.log(input.value);
     div.innerHTML=input.value;
 })*/
+
+
+
 /*function emmitToConsole(t){
     console.log(t);
 }
@@ -345,6 +354,9 @@ elem1.addEventListener('mouseover', function(e){
 e.target.style.fontSize=60+'px';
 }
 );*/
+
+
+
 /* let elem=document.querySelector('.div-1');
 let elem1=document.querySelector('.div-2');
     elem.addEventListener('mousemove', function(e) {
@@ -352,86 +364,95 @@ let elem1=document.querySelector('.div-2');
         let y = e.offsetY==undefined?e.layerY:e.offsetY;
         console.log(x, y);
     })  */
-       /*  for( let i=0; i<=10; i++){
-            setTimeout(function(){ console.log(i)}, 1000)
-            
-        } */
+    /*  for( let i=0; i<=10; i++){
+        setTimeout(function(){ console.log(i)}, 1000)
         
-        /* for( let i=0; i<=10; i++){
-            let time=i==0?1000:1000*(i+1);
-            setTimeout(function(){console.log(i)}, time)
-            
-        }  */
-        /* let a=5;
-        setInterval(function(){
-            if(a===5){
-                console.log(a);
-            } else {clearInterval()}
-        }, 1000);
-        setTimeout(function(){
-            a=6;
-        }, 5000); */
-        /* let elem=document.querySelector('div');
-        let h1=document.createElement('h1');
-        h1.innerHTML='Hello World';
-        elem.appendChild(h1);
-        h1.className(); */
-        /* let input=document.querySelector('div');
-        let input2=document.querySelector('.input2');
-        let inp=document.querySelector('.in');
-        input2.addEventListener('click', function(){
-            let h1=document.createElement('h1');
-            h1.innerHTML=inp.value;
-            input.appendChild(h1);
-            
-        }) */
-        /*let input=document.querySelector('div');
-        let input2=document.querySelector('.input2');
-        let inp=document.querySelector('.in');
-        input2.addEventListener('click', function(){
-            let h1=document.createElement('h1');
-            h1.innerHTML=inp.value;
-            input.insertBefore(h1, input.children[1]);
-        }) */
-        /* let div2=document.querySelector('.div-2');
-        let h1_2=document.querySelector('.h1_2');
-        div2.removeChild(h1_2);
-        div2.remove(); */
+    } */
 
-<<<<<<< HEAD
-        /* let div1=document.querySelector('.div-1');
-        let inp=document.querySelector('.inp');
-        let div2=document.createElement('div');
-        div2.innerHTML='Hello World';
-        inp.addEventListener('click', function(){
-            
-        }) */
-=======
-        let div1=document.querySelector('.div-1');
-        let inp=document.querySelector('.but');
-        inp.addEventListener('click', function(){
-            let div2=document.createElement('div');
-            div1.appendChild(div2);
-            div2.innerHTML='hello';
-            div2.className='nub';
-            let input2=document.createElement('input');
-            div1.appendChild(input2);
-            input2.type='button';
-            input2.value='-';
-            input2.addEventListener('click', function(){
-                div2.remove();
-                input2.remove();
-            })
-        })
->>>>>>> 8b5385609fe079d2acfba9b66a22bb3e3bae831f
+    
+    
+    /* for( let i=0; i<=10; i++){
+        let time=i==0?1000:1000*(i+1);
+        setTimeout(function(){console.log(i)}, time)
         
-        /* for (var i=0; i<2; i++){
-            var a=0;
+    }  */
+
+    /* let a=5;
+    setInterval(function(){
+        if(a===5){
             console.log(a);
-        }
-        if(true){
-            console.log(i);
-        }
+        } else {clearInterval()}
+    }, 1000);
+    setTimeout(function(){
+        a=6;
+    }, 5000); */
+
+
+
+    /* let elem=document.querySelector('div');
+    let h1=document.createElement('h1');
+    h1.innerHTML='Hello World';
+    elem.appendChild(h1);
+    h1.className(); */
+    /* let input=document.querySelector('div');
+    let input2=document.querySelector('.input2');
+    let inp=document.querySelector('.in');
+    input2.addEventListener('click', function(){
+        let h1=document.createElement('h1');
+        h1.innerHTML=inp.value;
+        input.appendChild(h1);
+        
+    }) */
+
+
+
+    /*let input=document.querySelector('div');
+    let input2=document.querySelector('.input2');
+    let inp=document.querySelector('.in');
+    input2.addEventListener('click', function(){
+        let h1=document.createElement('h1');
+        h1.innerHTML=inp.value;
+        input.insertBefore(h1, input.children[1]);
+    }) */
+    /* let div2=document.querySelector('.div-2');
+    let h1_2=document.querySelector('.h1_2');
+    div2.removeChild(h1_2);
+    div2.remove(); */
+
+    /* let div1=document.querySelector('.div-1');
+    let inp=document.querySelector('.inp');
+    let div2=document.createElement('div');
+    div2.innerHTML='Hello World';
+    inp.addEventListener('click', function(){
+        
+    }) */
+
+
+    /*  let div1=document.querySelector('.div-1');
+    let inp=document.querySelector('.but');
+    inp.addEventListener('click', function(){
+        let div2=document.createElement('div');
+        div1.appendChild(div2);
+        div2.innerHTML='hello';
+        div2.className='nub';
+        let input2=document.createElement('input');
+        div1.appendChild(input2);
+        input2.type='button';
+        input2.value='-';
+        input2.addEventListener('click', function(){
+            div2.remove();
+            input2.remove();
+        })
+    }) */
+
+    
+    /* for (var i=0; i<2; i++){
+        var a=0;
+        console.log(a);
+    }
+    if(true){
+        console.log(i);
+    }
     document.addEventListener('loaded', function(){
 
     }) */
@@ -464,15 +485,65 @@ a.fullname();
 console.log(a.name); */
 //kachok.fullname();
 //console.log(kachok.name, kachok.surname);
-let input1=document.querySelector('.input1');
-let input2=document.querySelector('.input2');
-let sum =document.querySelector('.sum');
-let minus=document.querySelector('.minus');
-let mult=document.querySelector('.mult');
-let divis=document.querySelector('.divis');
-let result=document.querySelector('.result');
-let calc={
-    
-}
+
+
+//Калькулятор с this 25.06.2019
+/* let input1 = document.querySelector('.inp1');
+let input2 = document.querySelector('.inp2');
+let plus = document.querySelector('.plus');
+let minus = document.querySelector('.minus');
+let division = document.querySelector('.division');;
+let mult = document.querySelector('.mult');
+let button = document.querySelectorAll('button');
+let result = document.querySelector('.result');
+
+plus.addEventListener('click', function() {
+    calc.input1 = input1.value;
+    calc.input2 = input2.value;
+    calc.sum();
+});
+
+minus.addEventListener('click', function() {
+    calc.input1 = input1.value;
+    calc.input2 = input2.value;
+    calc.minus();
+});
+
+division.addEventListener('click', function() {
+    calc.input1 = input1.value;
+    calc.input2 = input2.value;
+    calc.divis();
+});
+
+mult.addEventListener('click', function() {
+    calc.input1 = input1.value;
+    calc.input2 = input2.value;
+    calc.mult();
+});
+
+let calc = {
+    input1: 'null',
+    input2: 'null',
+    sum: function() {
+        result.innerHTML= +this.input1 + +this.input2;
+        input1.value = +this.input1 + +this.input2;
+        input2.value=0;
+    },
+    minus: function() {
+        result.innerHTML= +this.input1 - +this.input2;
+        input1.value = +this.input1 - +this.input2;
+        input2.value=0;
+    },
+    divis: function() {
+        result.innerHTML= +this.input1 / +this.input2;
+        input1.value = +this.input1 / +this.input2;
+        input2.value=0;
+    },
+    mult: function() {
+        result.innerHTML= +this.input1 * +this.input2;
+        input1.value = +this.input1 * +this.input2;
+        input2.value=0;
+    }
+};  */
         
     
