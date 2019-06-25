@@ -494,7 +494,7 @@ let plus = document.querySelector('.plus');
 let minus = document.querySelector('.minus');
 let division = document.querySelector('.division');;
 let mult = document.querySelector('.mult');
-let button = document.querySelectorAll('button');
+let button = document.querySelectorAll('.button');
 let result = document.querySelector('.result');
 
 plus.addEventListener('click', function() {
@@ -522,8 +522,8 @@ mult.addEventListener('click', function() {
 });
 
 let calc = {
-    input1: 'null',
-    input2: 'null',
+    input1: null,
+    input2: null,
     sum: function() {
         result.innerHTML= +this.input1 + +this.input2;
         input1.value = +this.input1 + +this.input2;
@@ -545,5 +545,99 @@ let calc = {
         input2.value=0;
     }
 };  */
-        
-    
+/* let obj={
+    value: 'hello',
+    logger: function(){
+        this.greeter();
+        console.log(this.value);
+    },
+    greeter: function(){
+        console.log('hello2');
+    },
+    abc:{
+        b: function(){
+            console.log(this);
+        }
+    }
+}
+let a=obj;
+obj=null;
+  a.logger() ;   
+  a.abc.b();  */
+
+ //map
+ 
+ /* const arr=[
+    {name: 'Vasya'}, 
+    {name: 'petya'},
+    {name: 'oksanocka'},
+    {name: 'Vitia'},
+    {name: 'nikolay'},
+    {name: 'marina'},
+    {name: 'konstantin'},
+    {name: 'Valya'},
+    {name: 'Anatholy'},
+ ]
+let objects=arr.map(function(el){
+    // return el.name;
+     if(el.name.length>5){
+         return el.name;
+     }
+ });
+ let data=objects.filter(function(el){
+    return typeof el==='string';
+ })
+ console.log(data); */
+ //filter
+ /* let arr =[
+     {
+         name: 'vasya',
+         age: 18,
+     },
+     {
+         name: 'tolya',
+         age: 16,
+     },
+     {
+         name: 'kolya',
+         age: 180,
+     },
+     {
+         name: 'lyda',
+         age: 1,
+     },
+ ]
+ let obj=arr.filter(function(el){
+     return el.age>18;
+ })
+ console.log(obj);
+ let res=arr.map(function(el){
+     return el.name;
+ })
+ console.log(res); */
+ /* let nedomasiv = ['1', '1', '1'];
+ let anothermasiv = ['0', '0', '0',];
+ let newArray=anotherarray(function(currentValue, acc){
+     return [...acc, ...currentValue];
+ }, nedomasiv);
+ console.log(newArray); */
+ let numbers = [1, 2, 3, 4];
+ let sum=numbers.reduce(function(prev, curr){
+     return prev+curr
+ }, 0);
+ //0+1 1+2 3+3 6+4
+ //Первое значение это prev; Которое стартует в данном случае с нуля
+ console.log(sum);
+ //Деструкторизация
+ let obj = {
+     name: '12345677843',
+     surname: 'Vasya',
+     supperData: {
+         topSecret: 'I love node'
+     }
+ }
+ const {surname, supperData}=obj;
+ console.log(surname, supperData.topSecret);
+ const arr = [1, 2, 3, 4];
+ const newArray =[...arr, 8, 9, 10];
+ console.log(newArray);
