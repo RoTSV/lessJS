@@ -621,7 +621,7 @@ let objects=arr.map(function(el){
      return [...acc, ...currentValue];
  }, nedomasiv);
  console.log(newArray); */
- let numbers = [1, 2, 3, 4];
+ /* let numbers = [1, 2, 3, 4];
  let sum=numbers.reduce(function(prev, curr){
      return prev+curr
  }, 0);
@@ -640,4 +640,40 @@ let objects=arr.map(function(el){
  console.log(surname, supperData.topSecret);
  const arr = [1, 2, 3, 4];
  const newArray =[...arr, 8, 9, 10];
- console.log(newArray);
+ console.log(newArray); */
+
+//сумма простых чисел
+ /* let arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+ 
+ let arrNew = arr.filter(function(elem) {
+     if (elem > 1 && elem % 3 !== 0 && elem % 2 !== 0 || elem == 2|| elem==3) {
+         return elem;
+     };
+ 
+ });
+ console.log(arrNew);
+ 
+ let sumArr = arrNew.reduce(function(sum, curr) {
+     return sum + curr;
+ });
+ console.log(sumArr); 
+ 
+
+ let count = arr.filter(function(el) {
+    if(el==1){
+      return false;
+    }     
+    for(let i=2; i*i<=el; i++){  
+      if(el % i == 0){
+        return false;
+      }      
+    }
+    return el;  
+  });
+  console.log(count);
+ let sumNumbers = count.reduce(function(sum, current) {
+    return sum + current;
+  }, 0);
+  
+  console.log(sumNumbers);  */ 
+  
