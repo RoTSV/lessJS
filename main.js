@@ -30,6 +30,73 @@ let a=0;
 
     
     alert(a);*/
+    /* function Store(codeProd, product, unit, count, purchPrice, sellPrice) {
+        this.codeProd = codeProd;
+        this.product = product;
+    
+        this.unit = unit;
+        this.count = count;
+        let _purchPrice = purchPrice;
+        this.getpurchPrice = function() {
+            console.log('Цена закупки, грн.:', _purchPrice);
+        }
+        this.setpurchPrice = function(p) {
+            _purchPrice = p;
+        };
+        this.sellPrice = sellPrice;
+        this.out = function() {
+            console.log(`ID код: ${this.codeProd}, Название товара: ${this.product}, Единица измерения: ${this.unit}, Количество: ${this.count}, Цена реализации, грн/${this.unit}: ${this.sellPrice}`)
+        };
+        this.shelfLife = function(shelfLife, date) {
+            if (shelfLife < date) {
+                return 'Cрок годности закончился'
+            } else {
+                return 'Cрок хранения хороший. Приятного аппетита!'
+            }
+        };
+        this.sellProd = function(k) {
+            let kol = k;
+            if (this.count !== 0 && this.count > kol) {
+                this.count = this.count - kol;
+                let income = kol * (this.sellPrice - _purchPrice);
+                return (`Продаж товара ${this.product} ${this.unit}, Доход, грн.: ${income}, Продано: ${kol}, Остаток на складе: ${this.count}`);
+            } else {
+                return 'Товара не хватает на складе!';
+            }
+        };
+        this.novaPoshta = function(k, depart, fullname, tel) {
+            this.costDev = 50;
+            let kolz = k;
+            this.depart = depart;
+            this.fullname = fullname;
+            this.tel = tel;
+            if (this.count !== 0 && this.count > kolz) {
+                this.count = this.count - kolz;
+                return (`Отправка новой почтой ${this.product}, Количество: ${kolz} ${this.unit}, данные покупателя: ${this.fullname}, ${this.tel}, отделение:${this.depart}, Cтоимость доставки, грн: ${this.costDev}, Остаток на складе: ${this.count}`);
+            } else {
+                return 'Товара не хватает на складе!';
+            }
+        }
+    
+    };
+    let Store1 = new Store('001', 'Шоколад с орехами Roshen', 'шт.', 32, [], 30);
+    // console.log(Store1);
+    Store1.out();
+    Store1.setpurchPrice(25);
+    Store1.getpurchPrice();
+    console.log(Store1.sellProd(5));
+    let Store2 = new Store('002', 'Конфеты "Бельгийский шоколадный трюфель"', 'шт.', 18, [], 150);
+    Store2.out();
+    Store2.setpurchPrice(100);
+    Store2.getpurchPrice();
+    let Store3 = new Store('003', 'Торт "Пьяная вишня', 'кг.', 7, [], 300);
+    Store3.out();
+    Store3.setpurchPrice(220);
+    Store3.getpurchPrice();
+    Store1.out();
+    console.log(Store3.novaPoshta(3, '№ 96', 'Влад Иванов', '+38 099 332 00 00'));
+    console.log(Store2.sellProd(4));
+    console.log(Store3.shelfLife(30719, 20719)); */
 /*let b= +prompt('С какого числа начинать отсчёт');
 let c= +prompt('На сколько увеличивать число');
 let n = +prompt('Сколько раз увеличивать');
@@ -670,10 +737,62 @@ let objects=arr.map(function(el){
     }
     return el;  
   });
+   /* if(b<3){
+                  fin.innerHTML='совсем мало'+' '+b;                
+                  }if(b<0){
+                  fin.innerHTML='нет столько в наличи';
+                      }else{
+                      fin.innerHTML=b;                    
+              } 
   console.log(count);
  let sumNumbers = count.reduce(function(sum, current) {
     return sum + current;
   }, 0);
   
   console.log(sumNumbers);  */ 
+
+/* 
+  let sum=document.querySelector('.sum');
+  let button=document.querySelector('button');
+  let fin=document.querySelector('.fin');
+  let p=document.querySelector('.price');
+  let prod=document.querySelector('.product');
+  let mass=document.querySelector('.mass');
+   function Store (name,price,total){ 
+      this.name=name;
+      this.price=price;
+      this.total=total;
+      const self=this;
+      button.addEventListener('click', function() {
+        console.log(this)
+        this.name=prod.value;
+        self.mass=mass.value;                                 
+        if(this.name==self.name){
+        fin.innerHTML= +self.total - +self.mass;        
+        sum.innerHTML=self.price*self.mass+' '+'$';           
+        } 
+              
+      });
+    }
+  
+  let silpo1=new Store('Пиво','10','50');
+  let silpo2=new Store('Вино','70','40');
+  let silpo3=new Store('Хамон','150','30');
+  let auto1=new Store('BMW','55000','25');
+  let auto2=new Store('Audi','42000','15');
+  let auto3=new Store('Honda','23000','10'); 
+ */
+
+let ships_red = document.querySelectorAll('.ship_l');
+let ships_blue = document.querySelectorAll('.ship_r');
+let start = document.querySelector('.start');
+start.addEventListener('click', function(){
+    for (let i = 0; i<ships_red.length; i++){
+        
+        console.log(ships_red[i]);
+    }
+    for (let j = 0; j<ships_blue; j++){
+        console.log(ships_blue[j]);
+    }
+})
   
