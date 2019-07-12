@@ -35,10 +35,21 @@
       justify-content: space-around;
 }
 
-.container .ships .ships_red div, .container .ships .ships_blue div {
+.container .ships .ships_red .ship_blue, .container .ships .ships_blue .ship_blue {
   width: 90px;
   height: 40px;
   border-radius: 40%;
-  background: goldenrod;
+  font-size: 30px;
+  text-align: center;
+  background: #07d0eb;
+}
+
+.container .ships .ships_red .ship_red, .container .ships .ships_blue .ship_red {
+  width: 90px;
+  height: 40px;
+  border-radius: 40%;
+  font-size: 30px;
+  text-align: center;
+  background: #8f0404;
 }
 /*# sourceMappingURL=styles.css.map */

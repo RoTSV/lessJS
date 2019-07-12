@@ -782,17 +782,61 @@ let objects=arr.map(function(el){
   let auto2=new Store('Audi','42000','15');
   let auto3=new Store('Honda','23000','10'); 
  */
-
-let ships_red = document.querySelectorAll('.ship_l');
-let ships_blue = document.querySelectorAll('.ship_r');
+let ships_blue = document.querySelectorAll('.ship_blue');
+let ships_red = document.querySelectorAll('.ship_red');
 let start = document.querySelector('.start');
-start.addEventListener('click', function(){
-    for (let i = 0; i<ships_red.length; i++){
+function Create_ships (){
+    this.xp=Math.floor(Math.random() * (7 - 5 + 1) + 5);
+    
+    
+}
+       
+shpB1 = new Create_ships();
+shpB2 = new Create_ships();
+shpB3 = new Create_ships();
+shpB4 = new Create_ships();
+
+shpR1 = new Create_ships();
+shpR2 = new Create_ships();
+shpR3 = new Create_ships();
+shpR4 = new Create_ships();
+shpR5 = new Create_ships();
+shpR6 = new Create_ships();
+
+let team_blue = [shpB1, shpB2, shpB3, shpB4];
+let team_red = [shpR1, shpR2, shpR3, shpR4, shpR5, shpR6];
+
+function searchTeam (){
+    for (let j = 0; j<ships_blue.length; j++){
+           
+    };
+    for (let j = 0; j<team_blue.length; j++){
         
-        console.log(ships_red[i]);
-    }
-    for (let j = 0; j<ships_blue; j++){
-        console.log(ships_blue[j]);
-    }
+        ships_blue[j].innerHTML=team_blue[j].xp;
+       
+        console.log('team blue HP:' + team_blue[j].xp );  
+    };
+
+    for (let i = 0; i<ships_red.length; i++){
+         
+    } ;
+    for (let i = 0; i<team_red.length; i++){
+
+        ships_red[i].innerHTML = team_red[i].xp;   
+       
+       console.log('team red HP:' + team_red[i].xp ); 
+    } ;
+      
+}
+searchTeam ();
+function combatShips(com_Bl) {
+    com_Bl = ships_red[i];
+    ships_red[i] = team_blue.length - com_Bl;
+    console.log(ships_red[0]);
+}
+start.addEventListener('click', function(){
+    setTimeout(combatShips, 2000); 
+    
+    
+    
 })
-  

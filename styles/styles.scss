@@ -16,11 +16,21 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
-            div{
+            .ship_blue{
                 width: 90px;
                 height: 40px;
                 border-radius: 40%;
-                background: goldenrod;
+                font-size: 30px;
+                text-align: center;
+                background: rgb(7, 208, 235);
+            }
+            .ship_red{
+                width: 90px;
+                height: 40px;
+                border-radius: 40%;
+                font-size: 30px;
+                text-align: center;
+                background: rgb(143, 4, 4);
             }
         }
     }
